@@ -1,0 +1,5 @@
+
+<script type="application/javascript">
+  GT.initialize({ gists: <%= @data[:gists].to_json.html_safe %>,
+                  favorites: <%= @data[:favorites].to_json.html_safe %> });
+</script>

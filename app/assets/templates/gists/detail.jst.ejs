@@ -1,0 +1,13 @@
+title: <%= model.escape('title') %>
+<br>
+  body: <%= model.escape('body') %>
+<br>
+
+<% if(favorite === "Favorite"){ %>
+  <button class="favorite" data-id="<%= model.escape("id") %>"><%= favorite %></button>
+<%} else {%>
+  <button class="favorite favorited" data-id="<%= model.escape("id") %>"><%= favorite %></button>
+<% }; %>
+
+<br>
+<br>
